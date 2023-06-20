@@ -82,6 +82,4 @@ test:
 #
 production:
   <<: *default
-  database: howgarts_rails_production
-  username: howgarts_rails
-  password: <%= ENV["HOWGARTS_RAILS_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
